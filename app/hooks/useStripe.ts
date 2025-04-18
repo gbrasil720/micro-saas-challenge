@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
 import { loadStripe, type Stripe } from "@stripe/stripe-js";
 
@@ -17,8 +16,9 @@ export function useStripe() {
 		loadStripeAsync();
 	}, []);
 
-	// biome-ignore lint/suspicious/noExplicitAny: <explanation>
-	async function createPaymentStripeCheckout(checkoutData: any) {
+	async function createPaymentStripeCheckout(checkoutData: {
+		testeId: string;
+	}) {
 		if (!stripe) return;
 
 		try {
@@ -38,8 +38,9 @@ export function useStripe() {
 		}
 	}
 
-	// biome-ignore lint/suspicious/noExplicitAny: <explanation>
-	async function createSubscriptionStripeCheckout(checkoutData: any) {
+	async function createSubscriptionStripeCheckout(checkoutData: {
+		testeId: string;
+	}) {
 		if (!stripe) return;
 
 		try {
