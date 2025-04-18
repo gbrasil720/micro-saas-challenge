@@ -71,12 +71,26 @@ Welcome to the **Next.js Micro SaaS Template**! This project provides a solid fo
 
    Example `.env.local` content:
    ```
-   NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
-   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
-   NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
-   NEXT_PUBLIC_STRIPE_PUBLIC_KEY=your_stripe_public_key
-   STRIPE_SECRET_KEY=your_stripe_secret_key
-   AUTH_SECRET=your_auth_secret
+   AUTH_SECRET=
+
+   AUTH_GOOGLE_ID=
+   AUTH_GOOGLE_SECRET=
+
+   FIREBASE_PROJECT_ID=
+   FIREBASE_CLIENT_EMAIL=
+   FIREBASE_PRIVATE_KEY_BASE64=
+
+   STRIPE_SECRET_KEY=
+   NEXT_PUBLIC_STRIPE_PUB_KEY=
+   STRIPE_PRODUCT_PRICE_ID=
+   STRIPE_SUBSCRIPTION_PRICE_ID=
+   STRIPE_WEBHOOK_SECRET=
+
+   MERCADO_PAGO_ACCESS_TOKEN=
+   NEXT_PUBLIC_MERCADO_PAGO_PUBLIC_KEY=
+   MERCADO_PAGO_WEBHOOK_SECRET=
+
+   RESEND_API_KEY=
    ```
 
 4. **Run the Development Server**
