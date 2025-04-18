@@ -13,6 +13,7 @@ export async function POST(req: NextRequest) {
 				external_reference: testeId, // mercado pago score
 				metadata: {
 					testeId, // teste_id
+					userEmail,
 				},
 				...(userEmail && { payer: { email: userEmail } }), // impact on the score
 				items: [
